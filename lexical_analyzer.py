@@ -64,4 +64,8 @@ if __name__ == "__main__":
     """
 
     lexer = LexicalAnalyzer(code)
-    tokens = 
+    tokens = lexer.analyze()
+
+    print("Tokens:")
+    for token in tokens:
+        print(token)
